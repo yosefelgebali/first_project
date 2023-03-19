@@ -2,7 +2,7 @@
 <odoo>
     <template id="account_inherited" inherit_id="account_reports.filter_info_template">
         <xpath expr="//div[hasclass('row')]" position="replace">
-            <div class="row1" style='margin-top: 20px; margin-bottom: 10px;'>
+            <div class="row1 print only" style='margin-top: 20px; margin-bottom: 10px;'>
                 <div class="date_company" valign="top" align="right">
                     <t t-if="options.get('date') and options['date'].get('string')">
                         <t t-out="options['date']['string']"/>
